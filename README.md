@@ -1,5 +1,7 @@
 # Tv Shows and Movies App
+
  A Tv shows and Movies browser web app, with information about nearest cinemas around on a map
+ demo: http://davidpayares.c1.biz/
  
 Features:
 - Main page displays by default the trending movies and tv shows from the current day.
