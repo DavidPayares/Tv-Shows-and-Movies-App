@@ -4,6 +4,8 @@
  
  demo: http://davidpayares.c1.biz/
  
+ https://github.com/DavidPayares/Tv-Shows-and-Movies-App/blob/master/tvshowsthum.jpg
+ 
 Features:
 - Main page displays by default the trending movies and tv shows from the current day.
 - In the input search box , users can search for information about an specific tv show or movie.
