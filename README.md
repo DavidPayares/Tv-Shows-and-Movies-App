@@ -4,7 +4,7 @@
  
  demo: http://davidpayares.c1.biz/
  
- https://github.com/DavidPayares/Tv-Shows-and-Movies-App/blob/master/tvshowsthum.jpg
+ ![App Interface](tvshowsthum.jpg)
  
 Features:
 - Main page displays by default the trending movies and tv shows from the current day.
