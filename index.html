@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="myWebApp.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>TV Show & Movies</h1>
+            <a id="mapi" href="#" data-icon="location" class="left">Cinemas</a>
+        </div>
+
+        <input type="search" id="search" value="" placeholder="Movie or Tv Show">
+        <fieldset id="select" data-role="controlgroup" data-type="horizontal" data-mini="true">
+            <input type="radio" name="radio-choice" id="radio-choice-a" value="movie" checked="checked">
+            <label for="radio-choice-a">Movie</label>
+            <input type="radio" name="radio-choice" id="radio-choice-b" value="tv">
+            <label for="radio-choice-b">TvShow</label>
+        </fieldset>
+
+        <div id="list"data-role="content">
+            <ul id="tvmovie_list" data-theme="c" data-role="listview" data-count-theme="c">
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="details">
+        <div id="gallery-background" class="clearfix"></div>
+        <div data-role="header" data-add-back-btn="true" data-theme="a">
+            <h1>Details</h1>
+        </div>
+
+        <div data-role="content">
+            <div><img id="tvMovieIcon" class="img-container" /></div>
+            <div>
+                <h3 id="tvMovieName"></h3>
+                <h4 id="status"></h4>
+                <h4 id="statusmovie"></h4>
+                <div id='overview'>
+                    <table id="statistics">
+                        <tr>
+                            <td id="gener"></td>
+                            <td id="year"></td>
+                            <td id="duration"></td>
+                            <td id="score"></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h4>Overview</h4>
+                    <p id="tvMovieDescription"></p>
+                </div>
+                <div id="info">
+                    <div data-role="collapsible" id="seasonstv" data-theme="c">
+                        <h3 id="seasonsCollapse">Seasons</h3>
+                        <ul id="sea" data-role="listview" data-theme="b" data-divider-theme="c"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="map-page">
+        <div data-role="header" data-add-back-btn="true" data-theme="a">
+            <h1>Cinemas NearBy</h1>
+        </div>
+
+        <div id="map-content" data-role="content">
+            <div id="map"></div>
+        </div>
+    </div>
+</body>
+<script src="myWebApp.js"></script>
+
+</html>
